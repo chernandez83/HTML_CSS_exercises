@@ -1,0 +1,90 @@
+* {
+  font-size: 1.05rem;
+}
+
+html {
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: #505050;
+  color: #00beef;
+  font-family: Verdana, Tahoma;
+  text-align: justify;
+}
+
+#welcome-section {
+  height: 100vh;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #404040;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+#header-img {
+  height: 75px;
+}
+
+#navdiv {
+  position: relative;
+  margin-top: 100px;
+}
+
+a {
+  color: #00baaf; 
+  text-decoration: None;
+}
+
+a:hover {
+  color: #00beef;
+}
+
+#welcome-img {
+  width: 500px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.project-tile {
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.potato-project {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width:420px) {
+  * {
+    font-size: 1rem;
+  }
+
+  #header-img {
+    height: 50px;
+  }
+
+  #welcome-img {
+    width: 250px;
+  }
+}
